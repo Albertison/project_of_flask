@@ -30,5 +30,10 @@ def registration():
     return render_template('registr.html', title='Авторизация', form=form)
 
 
+@app.route("/about_us")
+def about_us():
+    return render_template("about_us.html", title='Про нас')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
